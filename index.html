@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>MD Leitstelle</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🧭 MD Leitstelle</h1>
+    <p>Live-Übersicht – Fahrzeuge, Personal & Einsatzleitung</p>
+  </header>
+
+  <main>
+    <section class="einsatzleitung">
+      <h2>📞 Einsatzleitung</h2>
+      <input type="text" id="leitung-eingabe" placeholder="Name eintragen" oninput="updateLeitung()" />
+      <p id="leitung-anzeige">Aktuell: Keine Einsatzleitung</p>
+    </section>
+
+    <section class="statistik">
+      <h2>👥 Aktive Einsatzkräfte</h2>
+      <p id="anzahl-aktive">0 Einsatzkräfte eingetragen</p>
+    </section>
+
+    <section class="streifen">
+      <h2>🚑 Einsatzstreifen</h2>
+      <div class="streifen-container" id="streifen-container"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
