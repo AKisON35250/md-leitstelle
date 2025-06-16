@@ -1,34 +1,73 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MD Leitstelle</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
   <header>
-    <h1>🧭 MD Leitstelle</h1>
-    <p>Live-Übersicht – Fahrzeuge, Personal & Einsatzleitung</p>
+    <img src="logo.png" alt="MD Logo" class="logo" />
+    <h1>🩺 MD Leitstelle – Übersicht</h1>
   </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">🏠 Start</a></li>
+      <li><a href="#">📋 Patientenakte</a></li>
+      <li><a href="#">📡 Leitstelle</a></li>
+      <li><a href="#">🕒 Stempeluhr</a></li>
+    </ul>
+  </nav>
 
   <main>
     <section class="einsatzleitung">
-      <h2>📞 Einsatzleitung</h2>
-      <input type="text" id="leitung-eingabe" placeholder="Name eintragen" oninput="updateLeitung()" />
-      <p id="leitung-anzeige">Aktuell: Keine Einsatzleitung</p>
+      <h2>📞 Aktuelle Einsatzleitung</h2>
+      <input type="text" placeholder="Name eintragen..." />
     </section>
 
-    <section class="statistik">
-      <h2>👥 Aktive Einsatzkräfte</h2>
-      <p id="anzahl-aktive">0 Einsatzkräfte eingetragen</p>
-    </section>
-
-    <section class="streifen">
-      <h2>🚑 Einsatzstreifen</h2>
-      <div class="streifen-container" id="streifen-container"></div>
+    <section class="fahrzeuge">
+      <h2>🚑 Fahrzeugübersicht</h2>
+      <div class="fahrzeug-grid">
+        <!-- 5 Fahrzeuge á 3 Plätze -->
+        <!-- Fahrzeug 1 bis 5 -->
+        <!-- Jede Reihe = 1 Fahrzeug -->
+        <!-- 3 Input-Felder pro Fahrzeug -->
+        <div class="fahrzeug">
+          <h3>Streifen 1</h3>
+          <input type="text" placeholder="Fahrer 1" />
+          <input type="text" placeholder="Fahrer 2" />
+          <input type="text" placeholder="Fahrer 3" />
+        </div>
+        <div class="fahrzeug">
+          <h3>Streifen 2</h3>
+          <input type="text" placeholder="Fahrer 1" />
+          <input type="text" placeholder="Fahrer 2" />
+          <input type="text" placeholder="Fahrer 3" />
+        </div>
+        <div class="fahrzeug">
+          <h3>Streifen 3</h3>
+          <input type="text" placeholder="Fahrer 1" />
+          <input type="text" placeholder="Fahrer 2" />
+          <input type="text" placeholder="Fahrer 3" />
+        </div>
+        <div class="fahrzeug">
+          <h3>Streifen 4</h3>
+          <input type="text" placeholder="Fahrer 1" />
+          <input type="text" placeholder="Fahrer 2" />
+          <input type="text" placeholder="Fahrer 3" />
+        </div>
+        <div class="fahrzeug">
+          <h3>Streifen 5</h3>
+          <input type="text" placeholder="Fahrer 1" />
+          <input type="text" placeholder="Fahrer 2" />
+          <input type="text" placeholder="Fahrer 3" />
+        </div>
+      </div>
     </section>
   </main>
 
-  <script src="script.js"></script>
 </body>
 </html>
