@@ -1,54 +1,93 @@
 body {
-  background-color: #0a0a0a;
-  color: #eee;
-  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0e0e0e;
+  color: #ffffff;
+}
+
+header {
+  background-color: #2a0000;
+  padding: 20px;
+  text-align: center;
+}
+
+header .logo {
+  max-height: 60px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  margin: 0;
+  color: #ff4c4c;
+}
+
+nav {
+  background-color: #1a1a1a;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-header {
-  text-align: center;
-  padding: 2rem;
-  background-color: #400000;
-  color: white;
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 main {
-  padding: 1rem 2rem;
+  padding: 20px;
 }
 
-section {
-  margin-bottom: 2rem;
-}
-
-input {
-  padding: 0.5rem;
-  font-size: 1rem;
-  background-color: #222;
-  color: #fff;
-  border: 1px solid #555;
-  width: 100%;
-  margin-bottom: 0.5rem;
-}
-
-.streifen-container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1rem;
-}
-
-.streifen {
-  background-color: #1a1a1a;
-  border: 1px solid #400000;
-  padding: 1rem;
+.einsatzleitung input {
   width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #ff4c4c;
+  border-radius: 4px;
 }
 
-.streifen h3 {
+.fahrzeuge {
+  margin-top: 30px;
+}
+
+.fahrzeug-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.fahrzeug {
+  background-color: #1a1a1a;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ff4c4c;
+}
+
+.fahrzeug h3 {
   margin-top: 0;
-  color: #ff3333;
+  color: #ff4c4c;
 }
 
-.streifen input {
+.fahrzeug input {
+  display: block;
   width: 100%;
+  margin: 5px 0;
+  padding: 8px;
+  background-color: #0e0e0e;
+  color: #fff;
+  border: 1px solid #ff4c4c;
+  border-radius: 4px;
 }
